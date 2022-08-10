@@ -1,1 +1,42 @@
 let content = document.querySelector('.js-generated.content')
+let header = document.createElement('h1')
+header.setAttribute('class', 'dog-name')
+header.append('Rizzo')
+content.append(header)
+
+let dogContent = document.createElement('div')
+dogContent.setAttribute('div', 'dog-content')
+content.append(dogContent)
+
+let dogImage = document.createElement('img')
+dogImage.setAttribute('class', 'dog-image')
+dogImage.setAttribute('src', './assets/rizzo.jpg')
+dogContent.append(dogImage)
+
+let dogDetails = document.createElement('div')
+dogDetails.setAttribute('class', 'dog-details')
+dogContent.append(dogDetails)
+
+let h3Desc = document.createElement('h3')
+h3Desc.append('Description:')
+dogDetails.append(h3Desc)
+
+let paraDesc = document.createElement('p')
+paraDesc.append('This gentle dog is aloof toward her owner, and never comes when called. She always acts as though any stranger she meets will harm her, and dislikes other animals.')
+dogDetails.append(paraDesc)
+
+let feedingTimes = document.createElement('h3')
+feedingTimes.append('Feeding Times:')
+dogDetails.append(feedingTimes)
+
+let feedingTimesUL = document.createElement('ul')
+let morning = document.createElement('li')
+let afternoon = document.createElement('li')
+let noon = document.createElement('li')
+morning.append('9:00 am')
+afternoon.append('12:00 pm')
+noon.append('5:00 pm')
+feedingTimesUL.append(morning)
+feedingTimesUL.append(afternoon)
+feedingTimesUL.append(noon)
+dogDetails.append(feedingTimesUL)
